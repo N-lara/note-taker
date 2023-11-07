@@ -1,8 +1,8 @@
 // GIVEN a note-taking application
-// WHEN I open the Note Taker
-// THEN I am presented with a landing page with a link to a notes page
-// WHEN I click on the link to the notes page
-// THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+// +WHEN I open the Note Taker
+// +THEN I am presented with a landing page with a link to a notes page
+// +WHEN I click on the link to the notes page
+// THEN I am presented with a page with EXISTING NOTES listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
 // WHEN I enter a new note title and the note’s text
 // THEN a "Save Note" button and a "Clear Form" button appear in the navigation at the top of the page
 // WHEN I click on the Save button
@@ -11,6 +11,8 @@
 // THEN that note appears in the right-hand column and a "New Note" button appears in the navigation
 // WHEN I click on the "New Note" button in the navigation at the top of the page
 // THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
+
+//**make buttons for clear and post, put existing notes on left
 
 // The following HTML routes should be created:
 // GET /notes should return the notes.html file.
@@ -215,4 +217,6 @@ if (window.location.pathname === '/notes') {
   noteForm.addEventListener('input', handleRenderBtns);
 }
 
-getAndRenderNotes();
+getAndRenderNotes();// getnotes + renderNoteList
+console.log(getNotes);
+console.log('boolean'+ window.location.pathname === '/notes')
