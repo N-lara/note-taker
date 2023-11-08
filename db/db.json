@@ -23,5 +23,10 @@
         "title": "my new note",
         "text": "random text",
         "id": "d6e6"
+    },
+    {
+        "title": "test note",
+        "text": "asdfghjkloiuy",
+        "id": "aaa9"
     }
 ]
