@@ -31,4 +31,20 @@ const readAndAppend = (content, file) => {
   });
 };
 
+// const deleteAndSave = (id, file) =>{
+//   fs.readFile(file, 'utf-8', (err,data) =>{
+//     if (err) {
+//       console.error(err);
+//     } else {
+//       parsedData = JSON.parse(data)
+//       for(let i=0; i < parsedData.length; i++){
+//         if(parsedData[i].id === id){
+//           delete parsedData[i];
+//         };
+//         writeToFile(file, parsedData);
+//       }
+//     }
+//   })
+// }
+
 module.exports = { readFromFile, writeToFile, readAndAppend };
