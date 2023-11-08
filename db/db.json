@@ -1,14 +1,27 @@
 [
     {
         "title": "Test Title",
-        "text": "Test text"
+        "text": "Test text",
+        "id": 1
     },
     {
-        "title": "title",
-        "text": "note body"
+        "title": "title test",
+        "text": "note body",
+        "id": 2
     },
     {
         "title": "test",
-        "text": "note"
+        "text": "note",
+        "id": 3
+    },
+    {
+        "title": "test2",
+        "text": "leedle-leedle-lee",
+        "id": 4
+    },
+    {
+        "title": "my new note",
+        "text": "random text",
+        "id": "d6e6"
     }
 ]
